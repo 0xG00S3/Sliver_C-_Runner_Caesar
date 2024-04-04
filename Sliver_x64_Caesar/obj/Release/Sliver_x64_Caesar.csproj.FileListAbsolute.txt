@@ -1,0 +1,6 @@
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\obj\Release\Sliver_x64_Caesar.csproj.AssemblyReference.cache
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\obj\Release\Sliver_x64_Caesar.csproj.CoreCompileInputs.cache
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\bin\Release\honk.dll
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\bin\Release\honk.pdb
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\obj\Release\honk.dll
+C:\Users\getre\Dropbox (Personal)\0.0_Exploits\C#\Reflective Loading\Sliver_x64_Caesar\Sliver_x64_Caesar\obj\Release\honk.pdb
